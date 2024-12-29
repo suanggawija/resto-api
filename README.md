@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -63,4 +63,197 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT). -->
+
+# Resto API Documentation
+
+## Authentication
+
+### Login
+
+**Method**: POST  
+**URL**: `{{url}}/auth/login`  
+**Headers**:
+
+-   `Accept: application/json`
+
+**Body**:
+
+-   `email`: `manager@gmail.com`
+-   `password`: `123456`
+
+---
+
+### Me
+
+**Method**: GET  
+**URL**: `{{url}}/auth/me`  
+**Headers**:
+
+-   `Accept: application/json`
+-   `Authorization: Bearer <token>`
+
+---
+
+### Logout
+
+**Method**: GET  
+**URL**: `{{url}}/auth/logout`  
+**Headers**:
+
+-   `Accept: application/json`
+-   `Authorization: Bearer <token>`
+
+---
+
+## User
+
+### Create User
+
+**Method**: POST  
+**URL**: `{{url}}/user`  
+**Headers**:
+
+-   `Accept: application/json`
+
+**Body**:
+
+-   `name`: `weatress2`
+-   `email`: `weatress2@gmail.com`
+-   `password`: `123456`
+-   `role_id`: `2`
+
+---
+
+### Get User
+
+**Method**: GET  
+**URL**: `{{url}}/user`
+
+---
+
+## Order
+
+### Create Order
+
+**Method**: POST  
+**URL**: `{{url}}/order`  
+**Headers**:
+
+-   `Accept: application/json`
+-   `Authorization: Bearer <token>`
+
+**Body** (JSON):
+
+```json
+{
+    "customer_name": "Budi 5",
+    "table_no": "13",
+    "items": [1, 2, 3]
+}
+```
+
+---
+
+### Finish Order
+
+**Method**: GET  
+**URL**: `{{url}}/finish-order`  
+**Headers**:
+
+-   `Accept: application/json`
+-   `Authorization: Bearer <token>`
+
+---
+
+### Get Order
+
+**Method**: GET  
+**URL**: `{{url}}/order`  
+**Headers**:
+
+-   `Accept: application/json`
+-   `Authorization: Bearer <token>`
+
+---
+
+### Show Order
+
+**Method**: GET  
+**URL**: `{{url}}/order/6`  
+**Headers**:
+
+-   `Accept: application/json`
+-   `Authorization: Bearer <token>`
+
+---
+
+### Set As Done
+
+**Method**: GET  
+**URL**: `{{url}}/order/6/set-as-done`  
+**Headers**:
+
+-   `Accept: application/json`
+-   `Authorization: Bearer <token>`
+
+---
+
+### Payment
+
+**Method**: GET  
+**URL**: `{{url}}/order/6/payment`  
+**Headers**:
+
+-   `Accept: application/json`
+-   `Authorization: Bearer <token>`
+
+---
+
+## Item
+
+### Create Item
+
+**Method**: POST  
+**URL**: `{{url}}/item`  
+**Headers**:
+
+-   `Accept: application/json`
+-   `Authorization: Bearer <token>`
+
+**Body**:
+
+-   `name`: `Es Teh`
+-   `price`: `10000`
+-   `image_file`: _File upload_
+
+---
+
+### Update Item
+
+**Method**: POST  
+**URL**: `{{url}}/item/3`  
+**Headers**:
+
+-   `Accept: application/json`
+-   `Authorization: Bearer <token>`
+
+**Body**:
+
+-   `name`: `Bakso`
+-   `price`: `12000`
+-   `image_file`: _File upload_
+-   `_method`: `patch`
+
+---
+
+### Get Items
+
+**Method**: GET  
+**URL**: `{{url}}/item`  
+**Headers**:
+
+-   `Accept: application/json`
+-   `Authorization: Bearer <token>`
+
+---
