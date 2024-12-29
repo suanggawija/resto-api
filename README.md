@@ -69,12 +69,10 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Authentication
 
-### <font color="green"> POST </font> Login
+### <span style="color:red">POST</span> Login
 
 ```json
-{
-    "http://127.0.0.1:8000/api/auth/login"
-}
+"http://127.0.0.1:8000/api/auth/login"
 ```
 
 **Headers**:
