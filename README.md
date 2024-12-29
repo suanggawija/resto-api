@@ -72,7 +72,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Login
 
 **Method**: POST  
-**URL**: `{{url}}/auth/login`  
+**URL**: [`http://127.0.0.1:8000/api/auth/login`](http://127.0.0.1:8000/api/auth/login)  
 **Headers**:
 
 -   `Accept: application/json`
@@ -87,7 +87,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Me
 
 **Method**: GET  
-**URL**: `{{url}}/auth/me`  
+**URL**: [`http://127.0.0.1:8000/api/auth/me`](http://127.0.0.1:8000/api/auth/me)  
 **Headers**:
 
 -   `Accept: application/json`
@@ -98,7 +98,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Logout
 
 **Method**: GET  
-**URL**: `{{url}}/auth/logout`  
+**URL**: [`http://127.0.0.1:8000/api/auth/logout`](http://127.0.0.1:8000/api/auth/logout)  
 **Headers**:
 
 -   `Accept: application/json`
@@ -111,7 +111,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Create User
 
 **Method**: POST  
-**URL**: `{{url}}/user`  
+**URL**: [`http://127.0.0.1:8000/api/user`](http://127.0.0.1:8000/api/user)  
 **Headers**:
 
 -   `Accept: application/json`
@@ -128,7 +128,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Get User
 
 **Method**: GET  
-**URL**: `{{url}}/user`
+**URL**: [`http://127.0.0.1:8000/api/user`](http://127.0.0.1:8000/api/user)
 
 ---
 
@@ -137,7 +137,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Create Order
 
 **Method**: POST  
-**URL**: `{{url}}/order`  
+**URL**: [`http://127.0.0.1:8000/api/order`](http://127.0.0.1:8000/api/order)  
 **Headers**:
 
 -   `Accept: application/json`
@@ -158,7 +158,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Finish Order
 
 **Method**: GET  
-**URL**: `{{url}}/finish-order`  
+**URL**: [`http://127.0.0.1:8000/api/finish-order`](http://127.0.0.1:8000/api/finish-order)  
 **Headers**:
 
 -   `Accept: application/json`
@@ -169,7 +169,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Get Order
 
 **Method**: GET  
-**URL**: `{{url}}/order`  
+**URL**: [`http://127.0.0.1:8000/api/order`](http://127.0.0.1:8000/api/order)  
 **Headers**:
 
 -   `Accept: application/json`
@@ -180,7 +180,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Show Order
 
 **Method**: GET  
-**URL**: `{{url}}/order/6`  
+**URL**: [`http://127.0.0.1:8000/api/order/6`](http://127.0.0.1:8000/api/order/6)  
 **Headers**:
 
 -   `Accept: application/json`
@@ -191,7 +191,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Set As Done
 
 **Method**: GET  
-**URL**: `{{url}}/order/6/set-as-done`  
+**URL**: [`http://127.0.0.1:8000/api/order/6/set-as-done`](http://127.0.0.1:8000/api/order/6/set-as-done)  
 **Headers**:
 
 -   `Accept: application/json`
@@ -202,7 +202,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Payment
 
 **Method**: GET  
-**URL**: `{{url}}/order/6/payment`  
+**URL**: [`http://127.0.0.1:8000/api/order/6/payment`](http://127.0.0.1:8000/api/order/6/payment)  
 **Headers**:
 
 -   `Accept: application/json`
@@ -215,7 +215,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Create Item
 
 **Method**: POST  
-**URL**: `{{url}}/item`  
+**URL**: [`http://127.0.0.1:8000/api/item`](http://127.0.0.1:8000/api/item)  
 **Headers**:
 
 -   `Accept: application/json`
@@ -232,7 +232,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Update Item
 
 **Method**: POST  
-**URL**: `{{url}}/item/3`  
+**URL**: [`http://127.0.0.1:8000/api/item/3`](http://127.0.0.1:8000/api/item/3)  
 **Headers**:
 
 -   `Accept: application/json`
@@ -250,7 +250,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Get Items
 
 **Method**: GET  
-**URL**: `{{url}}/item`  
+**URL**: [`http://127.0.0.1:8000/api/item`](http://127.0.0.1:8000/api/item)  
 **Headers**:
 
 -   `Accept: application/json`
